@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+
+* {
+    overflow:auto; 
+}
+
+/* Couleurs possibles : #CCA45E  */
+
+body { 
+    background-color: #F5E1C9;
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p.category {
+    background-color: #805E43;
+    color: white;
+    display: inline-block;
+    padding: 5px 25px;
+    margin-top: -15px;
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+div.category {
+    margin-bottom: 0;
+    margin-top: 0;
+    overflow: visible;
+}
+
+.content {
+    background-color: white;
+    margin: 60px 30% 80px 30%;
+    padding: 0px 30px;
+    min-width: 270px;
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);
+    overflow: visible;
+}
+
+h1 {
+    text-align: center;  
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.separation {
+    width: 150px;
+    height: 3px;
+    background-color: #805E43;
+    margin: 0 auto;
+}
+
+p.description {
+    max-width: 400px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.center {
+    text-align: center;
+    width: 100%;
+}
+
+div.infos{
+    position: relative;
+}
+
+table.infos {
+    position: absolute ; 
+    bottom: 0; 
+    width: 100%; 
+    color: black; 
+    background-color: #F5E1C9C0; 
+    height: 80px;
+}
+
+table.infos td {
+    text-align: center;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+table.infos th {
+    font-size: 16px;
+    vertical-align: bottom;
+    padding-bottom: 5px;
+}
+
+img.info {
+    display: block;
+    max-height: 400px;
+    object-fit: cover;
+    min-height: 200px;
+    background-color: lightgrey;
+}
+
+div.column {
+    width: 45%;
+}
+
+div.column h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 25px;
+    border-bottom: 5px solid #805E43;
+    padding-bottom: 5px;
+}
+
+div.column1 {
+    display: inline-block;
+    margin-right: 10%;
+}
+div.column2 {
+    float: right;
+}
+
+div.ingredient_list p {
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    font-size: 8px 0;
+    margin: 5px 0;
+}
+
+table.preparation p.number {
+    background-color: #805E43;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 4px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0;
+}
+
+table.preparation td {
+    vertical-align: top;
+}
+
+table.preparation td.preparation_steps {
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+
+table.preparation tr {
+    height: 40px;
+}
+
+
+
+/* Display : block = élément occupe toute la ligne
+   
+   Display : inline = élément occupe l'espace nécessaire et autorise les autres éléments à venir à la suite, quand on est avec cette propriété, certaines autres propriétés ne fonctionnent pas
+
+   Display : inline-block = on reste en mode ligne mais on va pouvoir contrôler plus de choses sur la ligne, notamment au niveau de la taille est des marges  
+
+   Propriété POSITION:
+   Cette propriété prend par défaut la valeur static
+   relative : permet de repositionner l'élément par rapport à sa position d'origine, on peut déplacer cet élément sans déplacer les autres éléments. Permet également à des éléments enfants de venir utiliser la position absolue. 
+   On doit donc passer la valeur absolute à l'élément enfant 
+
+   overflow : auto ; = pour réadapter la taille du contenu sans dépassement 
+
+*/
